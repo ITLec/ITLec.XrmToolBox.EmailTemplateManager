@@ -314,5 +314,10 @@ namespace ITLec.EmailTemplateManager.Forms
         {
 
         }
+
+        private void btnOpenCRMEditor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

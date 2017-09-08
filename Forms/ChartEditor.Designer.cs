@@ -48,6 +48,7 @@
             this.tecVisualizationDescription = new ICSharpCode.TextEditor.TextEditorControl();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEmailTemplateType = new System.Windows.Forms.TextBox();
+            this.btnOpenCRMEditor = new System.Windows.Forms.Button();
             this.pnlTitle.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -79,6 +80,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnOpenCRMEditor);
             this.panel2.Controls.Add(this.buttonDeleteEmailTemplate);
             this.panel2.Controls.Add(this.buttonSaveAs);
             this.panel2.Controls.Add(this.btnUpdatePublish);
@@ -95,7 +97,7 @@
             // buttonDeleteEmailTemplate
             // 
             this.buttonDeleteEmailTemplate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDeleteEmailTemplate.Location = new System.Drawing.Point(524, 4);
+            this.buttonDeleteEmailTemplate.Location = new System.Drawing.Point(576, 4);
             this.buttonDeleteEmailTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDeleteEmailTemplate.Name = "buttonDeleteEmailTemplate";
             this.buttonDeleteEmailTemplate.Size = new System.Drawing.Size(128, 28);
@@ -108,7 +110,7 @@
             // buttonSaveAs
             // 
             this.buttonSaveAs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSaveAs.Location = new System.Drawing.Point(679, 4);
+            this.buttonSaveAs.Location = new System.Drawing.Point(704, 4);
             this.buttonSaveAs.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSaveAs.Name = "buttonSaveAs";
             this.buttonSaveAs.Size = new System.Drawing.Size(128, 28);
@@ -121,7 +123,7 @@
             // btnUpdatePublish
             // 
             this.btnUpdatePublish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdatePublish.Location = new System.Drawing.Point(369, 4);
+            this.btnUpdatePublish.Location = new System.Drawing.Point(448, 4);
             this.btnUpdatePublish.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdatePublish.Name = "btnUpdatePublish";
             this.btnUpdatePublish.Size = new System.Drawing.Size(128, 28);
@@ -134,10 +136,10 @@
             // btnlVisualEditor
             // 
             this.btnlVisualEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnlVisualEditor.Location = new System.Drawing.Point(48, 4);
+            this.btnlVisualEditor.Location = new System.Drawing.Point(216, 4);
             this.btnlVisualEditor.Margin = new System.Windows.Forms.Padding(4);
             this.btnlVisualEditor.Name = "btnlVisualEditor";
-            this.btnlVisualEditor.Size = new System.Drawing.Size(167, 28);
+            this.btnlVisualEditor.Size = new System.Drawing.Size(135, 28);
             this.btnlVisualEditor.TabIndex = 7;
             this.btnlVisualEditor.Text = "Open Visual Editor";
             this.btnlVisualEditor.UseVisualStyleBackColor = true;
@@ -147,7 +149,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUpdate.Location = new System.Drawing.Point(242, 4);
+            this.btnUpdate.Location = new System.Drawing.Point(352, 4);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(100, 28);
@@ -271,7 +273,7 @@
             this.tecVisualizationDescription.Location = new System.Drawing.Point(141, -1);
             this.tecVisualizationDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tecVisualizationDescription.Name = "tecVisualizationDescription";
-            this.tecVisualizationDescription.Size = new System.Drawing.Size(788, 363);
+            this.tecVisualizationDescription.Size = new System.Drawing.Size(788, 364);
             this.tecVisualizationDescription.TabIndex = 7;
             this.tecVisualizationDescription.Load += new System.EventHandler(this.tecVisualizationDescription_Load);
             // 
@@ -294,6 +296,19 @@
             this.txtEmailTemplateType.Name = "txtEmailTemplateType";
             this.txtEmailTemplateType.Size = new System.Drawing.Size(789, 22);
             this.txtEmailTemplateType.TabIndex = 7;
+            // 
+            // btnOpenCRMEditor
+            // 
+            this.btnOpenCRMEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenCRMEditor.Location = new System.Drawing.Point(88, 4);
+            this.btnOpenCRMEditor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOpenCRMEditor.Name = "btnOpenCRMEditor";
+            this.btnOpenCRMEditor.Size = new System.Drawing.Size(127, 28);
+            this.btnOpenCRMEditor.TabIndex = 11;
+            this.btnOpenCRMEditor.Text = "Open CRM Editor";
+            this.btnOpenCRMEditor.UseVisualStyleBackColor = true;
+            this.btnOpenCRMEditor.Visible = false;
+            this.btnOpenCRMEditor.Click += new System.EventHandler(this.btnOpenCRMEditor_Click);
             // 
             // EmailTemplateEditor
             // 
@@ -352,5 +367,6 @@
         private System.Windows.Forms.Button buttonDeleteEmailTemplate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEmailTemplateType;
+        private System.Windows.Forms.Button btnOpenCRMEditor;
     }
 }

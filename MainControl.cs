@@ -75,6 +75,7 @@ namespace ITLec.EmailTemplateManager
                         tsbImportEmailTemplates.Enabled = true;
                         tsbExportEmailTemplates.Enabled = true;
                         tsbEditEmailTemplate.Enabled = true;
+                        toolStripButtonOpenCRMEditor.Enabled = true;
                         txtSearchEntity.Focus();
                     }
                 }
@@ -327,6 +328,20 @@ namespace ITLec.EmailTemplateManager
                     MessageBox.Show(ParentForm, error.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void toolStripButtonOpenCRMEditor_Click(object sender, EventArgs e)
+        {
+
+            if (lvEmailTemplates.SelectedItems.Count == 0)
+                return;
+
+            var entity = (Entity)lvEmailTemplates.SelectedItems[0].Tag;
+
+            string url = ConnectionDetail.WebApplicationUrl + @"tools/emailtemplateeditor/emailtemplateeditor.aspx?id=" + entity.Id.ToString();
+
+            ProcessStartInfo sInfo = new ProcessStartInfo(url);
+            Process.Start(sInfo);
         }
     }
 }

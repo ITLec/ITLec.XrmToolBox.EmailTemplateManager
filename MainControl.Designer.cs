@@ -56,6 +56,7 @@
             this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.toolStripButtonOpenCRMEditor = new System.Windows.Forms.ToolStripButton();
             this.gbEntities.SuspendLayout();
             this.tsMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -155,6 +156,7 @@
             this.tsbLoadEntities,
             this.toolStripSeparator1,
             this.tsbEditEmailTemplate,
+            this.toolStripButtonOpenCRMEditor,
             this.toolStripSeparator3,
             this.tsbExportEmailTemplates,
             this.tsbImportEmailTemplates});
@@ -238,7 +240,7 @@
             // 
             this.importEmailTemplatesFromFileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("importEmailTemplatesFromFileToolStripMenuItem.Image")));
             this.importEmailTemplatesFromFileToolStripMenuItem.Name = "importEmailTemplatesFromFileToolStripMenuItem";
-            this.importEmailTemplatesFromFileToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.importEmailTemplatesFromFileToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
             this.importEmailTemplatesFromFileToolStripMenuItem.Text = "From file";
             this.importEmailTemplatesFromFileToolStripMenuItem.ToolTipText = "Import one emailTemplate from one emailTemplate file definition file";
             this.importEmailTemplatesFromFileToolStripMenuItem.Click += new System.EventHandler(this.importEmailTemplatesFromFileToolStripMenuItem_Click);
@@ -247,7 +249,7 @@
             // 
             this.importEmailTemplatesFromFolderToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("importEmailTemplatesFromFolderToolStripMenuItem.Image")));
             this.importEmailTemplatesFromFolderToolStripMenuItem.Name = "importEmailTemplatesFromFolderToolStripMenuItem";
-            this.importEmailTemplatesFromFolderToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.importEmailTemplatesFromFolderToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
             this.importEmailTemplatesFromFolderToolStripMenuItem.Text = "From folder";
             this.importEmailTemplatesFromFolderToolStripMenuItem.ToolTipText = "Import one or multiple emailTemplates from emailTemplate definition files contain" +
     "ed in a folder";
@@ -330,6 +332,16 @@
             this.columnHeader5.Text = "Description";
             this.columnHeader5.Width = 306;
             // 
+            // toolStripButtonOpenCRMEditor
+            // 
+            this.toolStripButtonOpenCRMEditor.Enabled = false;
+            this.toolStripButtonOpenCRMEditor.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonOpenCRMEditor.Image")));
+            this.toolStripButtonOpenCRMEditor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonOpenCRMEditor.Name = "toolStripButtonOpenCRMEditor";
+            this.toolStripButtonOpenCRMEditor.Size = new System.Drawing.Size(170, 27);
+            this.toolStripButtonOpenCRMEditor.Text = "Open Template CRM";
+            this.toolStripButtonOpenCRMEditor.Click += new System.EventHandler(this.toolStripButtonOpenCRMEditor_Click);
+            // 
             // MainControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -380,5 +392,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeaderName;
+        private System.Windows.Forms.ToolStripButton toolStripButtonOpenCRMEditor;
     }
 }
